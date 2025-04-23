@@ -1,0 +1,4 @@
+hf_cache/**/*.bin filter=lfs diff=lfs merge=lfs -text
+hf_cache/**/*.json filter=lfs diff=lfs merge=lfs -text
+hf_cache/**/*.model filter=lfs diff=lfs merge=lfs -text
+hf_cache/**/*.txt filter=lfs diff=lfs merge=lfs -text
