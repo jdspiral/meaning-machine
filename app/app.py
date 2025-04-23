@@ -161,7 +161,7 @@ st.markdown("---")
 st.markdown("### 🔗 Follow & Deploy")
 st.markdown("""
 - 🔗 [Read Explainers](https://theperformanceage.com/s/explainers)  
-- 💻 [GitHub](https://github.com/jdspiralb/tokenizer)  
+- 💻 [GitHub](https://github.com/jdspiral/tokenizer)  
 - ✖️ [X](https://twitter.com/joshdhathcock)  
 - 📸 [Instagram](https://instagram.com/joshdhathcock)  
 """)
