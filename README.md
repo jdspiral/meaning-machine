@@ -15,6 +15,20 @@ Tokenizer is an interactive demo that lets you explore what your sentence looks 
 - Extract **Subject–Verb–Object (SVO)** triples from your text
 - Learn how machines simulate understanding through structure, not grounding
 
+## How This Relates to LLMs
+
+This app combines classical NLP visualizations (e.g., POS tagging, dependency parsing) with real language model embeddings (from DistilBERT) to help users "see" how structure and meaning are derived.
+
+**But! Important clarification:**
+
+- ✅ **Tokenization** and **embeddings** represent real components of LLM internals.
+- ⚠️ **Dependency trees, POS tags, and SVOs** are illustrative—they reflect *our* grammatical intuition, not how models “think.”
+
+To understand actual LLM internals:
+- [What BERT Knows About Syntax](https://arxiv.org/abs/1906.04341)
+- [Transformer Circuits](https://transformer-circuits.pub)
+- [Is POS Even Real?](https://arxiv.org/abs/2005.04511)
+
 ---
 
 ## Why It Matters
