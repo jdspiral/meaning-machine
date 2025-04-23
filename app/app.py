@@ -57,9 +57,9 @@ with st.expander("⚠️ Read This First — What This App Shows and Doesn’t",
 
 But here's the key thing:
 
-- ✅ **Tokenization and embeddings** reflect actual processes used by language models like BERT and GPT.
-- ⚠️ **POS tagging, SVO extraction, and dependency parsing** come from classical NLP (via spaCy), not modern LLM internals. They’re shown here to make implicit structures more legible, not because they are used by the models directly.
-- 🧠 LLMs **do not explicitly tag parts of speech** or build trees. Their knowledge of syntax emerges implicitly in vector space (e.g., via attention heads).
+- **Tokenization and embeddings** reflect actual processes used by language models like BERT and GPT.
+- **POS tagging, SVO extraction, and dependency parsing** come from classical NLP (via spaCy), not modern LLM internals. They’re shown here to make implicit structures more legible, not because they are used by the models directly.
+- LLMs **do not explicitly tag parts of speech** or build trees. Their knowledge of syntax emerges implicitly in vector space (e.g., via attention heads).
 
 For how transformers actually encode structure, check out:
 - [A Structural Probe](https://arxiv.org/abs/1906.04341)
