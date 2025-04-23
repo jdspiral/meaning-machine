@@ -1,8 +1,8 @@
-# Meaning Machine
+# Tokenizer
 
 **See how language models fragment, encode, and simulate meaning.**
 
-Meaning Machine is an interactive demo that lets you explore what your sentence looks like to a machine — from tokenization to embeddings, grammar trees, and beyond.
+Tokenizer is an interactive demo that lets you explore what your sentence looks like to a machine — from tokenization to embeddings, grammar trees, and beyond.
 
 ---
 
@@ -24,7 +24,7 @@ LLMs don’t “understand” language like humans do. They simulate meaning thr
 
 - But they know what often comes after “pet the…”
 
-**Meaning Machine** lets you see how this works — and why it matters in an era where AI writes resumes, moderates speech, and shapes how truth circulates.
+**Tokenizer** lets you see how this works — and why it matters in an era where AI writes resumes, moderates speech, and shapes how truth circulates.
 
 ---
 
@@ -40,15 +40,15 @@ Built with:
 
 ## 🚀 Live Demo
 
-Try it here → [Launch Meaning Machine](https://meaning-machine.streamlit.app/)
+Try it here → [Launch Tokenizer](https://meaning-machine.streamlit.app/)
 
 ---
 
 ## Run It Locally
 
 ```bash
-git clone https://github.com/yourusername/meaning-machine.git
-cd meaning-machine
+git clone https://github.com/yourusername/tokenizer.git
+cd tokenizer
 python -m venv venv
 source venv/bin/activate        # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt

@@ -19,7 +19,7 @@ import spacy
 from spacy import displacy
 import gc
 
-st.set_page_config(page_title="Meaning Machine", layout="centered")
+st.set_page_config(page_title="Tokenizer", layout="centered")
 
 @st.cache_resource(show_spinner=False)
 def load_spacy():
@@ -49,7 +49,7 @@ def load_bert():
 nlp       = load_spacy()
 tokenizer, model = load_bert()
 
-st.title("Meaning Machine")
+st.title("Tokenizer")
 st.markdown("##### Visualize how machines tokenize, embed, and parse your language.")
 
 with st.form("input_form"):
@@ -161,7 +161,7 @@ st.markdown("---")
 st.markdown("### 🔗 Follow & Deploy")
 st.markdown("""
 - 🔗 [Read Explainers](https://theperformanceage.com/s/explainers)  
-- 💻 [GitHub](https://github.com/jdspiralb/meaning-machine)  
+- 💻 [GitHub](https://github.com/jdspiralb/tokenizer)  
 - ✖️ [X](https://twitter.com/joshdhathcock)  
 - 📸 [Instagram](https://instagram.com/joshdhathcock)  
 """)
