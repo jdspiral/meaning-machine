@@ -14,7 +14,7 @@ import pandas as pd
 from sklearn.decomposition import PCA
 import plotly.express as px
 import torch
-from transformers import DistilBertTokenizerFast, DistilBertModel
+from transformers import AutoTokenizer, AutoModel
 import spacy
 from spacy import displacy
 import gc
@@ -33,13 +33,13 @@ def load_bert():
     if not (local_dir / "config.json").is_file():
         raise FileNotFoundError(f"config.json missing in: {local_dir}")
 
-    tokenizer = DistilBertTokenizerFast.from_pretrained(
+    tokenizer = AutoTokenizer.from_pretrained(
         str(local_dir),
         local_files_only=True
     )
     tokenizer.model_max_length = 512
 
-    model = DistilBertModel.from_pretrained(
+    model = AutoModel.from_pretrained(
         str(local_dir),
         local_files_only=True
     )
