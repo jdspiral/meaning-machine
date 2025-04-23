@@ -207,7 +207,7 @@ if user_input:
 
 st.markdown("---")
 
-st.markdown("### 🔗 Follow & Deploy")
+st.markdown("### 🔗 Follow")
 st.markdown("""
 - 🔗 [Read Explainers](https://theperformanceage.com/s/explainers)  
 - 💻 [GitHub](https://github.com/jdspiral/tokenizer)  
