@@ -50,10 +50,10 @@ nlp = load_spacy()
 tokenizer, model = load_bert()
 
 st.title("Tokenizer")
-st.markdown("##### Explore how text gets tokenized, embedded, and linguistically analyzed — and what that means (and doesn’t) for LLMs.")
+st.markdown("##### Explore how text gets tokenized, embedded, and linguistically analyzed and what that means (and doesn’t) for LLMs.")
 with st.expander("⚠️ Read This First — What This App Shows and Doesn’t", expanded=False):
     st.markdown("""
-**This app is educational.** It visualizes classical NLP techniques — tokenization, POS tagging, SVO extraction, dependency trees, and embedding visualizations — as a way to help users understand **how structure and meaning can be simulated** in language.
+**This app is educational.** It visualizes classical NLP techniques — tokenization, POS tagging, SVO extraction, dependency trees, and embedding visualizations as a way to help users understand **how structure and meaning can be simulated** in language.
 
 But here's the key thing:
 
@@ -115,7 +115,7 @@ if user_input:
     with st.expander("About SVO Extraction", expanded=False):
         st.write(
             "We use spaCy's dependency parse to extract simple (subject, verb, object) "
-            "triples—i.e. who did what to whom—by looking for the main verb (ROOT/ccomp/xcomp) "
+            "triples i.e. who did what to whom by looking for the main verb (ROOT/ccomp/xcomp) "
             "and its nominal subject and direct object."
         )
     doc = nlp(user_input)
@@ -173,7 +173,7 @@ if user_input:
     st.markdown("## Dependency Structure")
     with st.expander("Reading the Tree", expanded=False):
         st.write(
-            "Here we render the full dependency parse tree—showing how subjects, objects, "
+            "Here we render the full dependency parse tree showing how subjects, objects, "
             "modifiers and clauses connect to form the sentence structure."
         )
     html = displacy.render(doc, style="dep", page=False)
