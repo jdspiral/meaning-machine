@@ -177,7 +177,7 @@ if user_input:
             "modifiers and clauses connect to form the sentence structure."
         )
     html = displacy.render(doc, style="dep", page=False)
-    components.html(html, scrolling=True, height=480)
+    components.html(html, scrolling=True, height=500)
     st.write('Scroll ↔️ to see the full tree.')
 
     st.markdown("## Dependency Role Glossary")
