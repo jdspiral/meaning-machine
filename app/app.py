@@ -168,6 +168,7 @@ if user_input:
         fig.update_traces(textposition="top center")
         st.plotly_chart(fig, use_container_width=True)
 
+        del outputs, embeddings, coords
     torch.cuda.empty_cache()
     gc.collect()
 
