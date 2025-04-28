@@ -101,6 +101,8 @@ if user_input:
         max_length=tokenizer.model_max_length,
         add_special_tokens=False,
     )
+    encoded["input_ids"]     = encoded["input_ids"].long()
+    encoded["attention_mask"] = encoded["attention_mask"].long()
     token_ids = encoded["input_ids"][0].cpu().tolist()
     tokens    = tokenizer.convert_ids_to_tokens(token_ids)
     df_tokens = pd.DataFrame({
@@ -166,7 +168,6 @@ if user_input:
         fig.update_traces(textposition="top center")
         st.plotly_chart(fig, use_container_width=True)
 
-    del outputs, embeddings, coords
     torch.cuda.empty_cache()
     gc.collect()
 
